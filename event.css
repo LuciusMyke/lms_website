@@ -1,0 +1,267 @@
+/* Basic Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    color: #3a2b5e; /* Dark Purple/Indigo from the image */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3a2b5e;
+    line-height: 1.2;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: #777;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #5d4a94; /* Lighter hover color */
+}
+
+.main-nav a i {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #5d4a94; /* Accent color for icons */
+}
+
+/* --- Main Content Sections --- */
+main {
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.intro-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* --- Events Grid --- */
+.events-section {
+    padding: 40px 5%;
+}
+
+.events-section h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 25px;
+    color: #3a2b5e;
+    padding-left: 5px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.event-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s;
+}
+
+.event-card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.event-card .tag {
+    display: inline-block;
+    color: #5d4a94;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-card h3 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3a2b5e;
+}
+
+.event-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.event-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.event-details i {
+    color: #5d4a94;
+    margin-right: 8px;
+    width: 15px;
+}
+
+.event-details .price {
+    font-weight: bold;
+    color: #008000; /* Green for 'Free' */
+    margin-top: 15px;
+}
+
+/* --- Pagination --- */
+.pagination {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #5d4a94;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active, .pagination a:hover {
+    background-color: #5d4a94;
+    color: #fff;
+    border-color: #5d4a94;
+}
+
+/* --- Newsletter Signup Section --- */
+.signup-section {
+    text-align: center;
+    padding: 60px 5%;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+}
+
+.signup-section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #3a2b5e;
+}
+
+.signup-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #3a4768; /* Dark Navy Blue */
+    color: #fff;
+    text-align: center;
+    padding: 40px 5%;
+    margin-top: 40px;
+}
+
+.footer-content h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-content .copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.footer-content .tagline {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        gap: 15px;
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr; /* Stack events vertically on smaller screens */
+    }
+}

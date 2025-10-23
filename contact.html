@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KiddleLamp Learning Center - Contact</title>
+  <link rel="stylesheet" href="home.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Unique Styles for Contact Page (Keeping the card layout) */
+    main {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 5%;
+    }
+
+    main h1 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--secondary-color); /* Uses KiddleLamp color */
+    }
+
+    main p {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 16px;
+      color: var(--grey-text); /* Uses KiddleLamp color */
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .contact-card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--secondary-color); /* Uses KiddleLamp color */
+    }
+
+    /* Styling for the emojis used in the contact card headers */
+    .contact-card h3:before {
+        content: attr(data-icon);
+        font-size: 20px;
+        color: var(--primary-color);
+        margin-right: 5px;
+    }
+
+    .contact-card .address:before { content: '📍'; }
+    .contact-card .email-phone:before { content: '✉'; }
+    .contact-card .hours:before { content: '🕒'; }
+
+    .contact-card h3 {
+        /* Remove the need for the data-icon trick by using CSS only for icons */
+        /* Reverting to standard H3 styling and relying on embedded emojis/icons in the content */
+        display: block; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+      text-align: left; /* Keep text aligned left inside cards */
+    }
+
+    @media (max-width: 768px) {
+        .contact-info {
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-card {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+        <div class="logo-container">
+            <img src="./assets/logo.jfif" alt="KiddleLamp Learning Center Logo"> 
+            <span class="site-title">KiddleLamp <br> Learning Center</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" ><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"  class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i> More <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="chatbot.html">Chatbot</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+         </header>
+
+  <main>
+    <h1>Contact Information</h1>
+    <p>We'd love to hear from you! Reach out to learn about enrollment, ask questions, or schedule a visit to our learning center.</p>
+
+    <div class="contact-info">
+      <div class="contact-card">
+        <h3>📍 Visit Our Learning Center</h3>
+        <p>Blk 18, Lot 116, Southville 8C, Brgy. San Isidro, Rodriguez, Rizal</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>✉ Contact/Email</h3>
+        <p>Main Office: (555) 123-LEARN<br>
+          Enrollment: (555) 123-ENROLL<br>
+          General: info@kiddielamplearning.edu<br>
+          Enrollment: enroll@kiddielamplearning.edu</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>🕒 Learning Center Hours</h3>
+        <p>Monday - Friday: 7:00 AM - 6:00 PM<br>
+          Saturday: 8:00 AM - 12:00 PM (Special Programs)<br>
+          Sunday: Closed</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+        <h3>Ready to Start Learning?</h3>
+        <p>Come visit KiddleLamp Learning Center and see how much fun learning can be!</p>
+        <p class="copyright">© 2024 KiddleLamp Learning Center</p>
+        <p class="tagline">Excellence in Education - Illuminating Minds for Tomorrow's Success</p>
+    </div>
+  </footer>
+</body>
+</html>
