@@ -78,18 +78,21 @@ a {
     border-bottom: 1px solid #eee;
     max-width: 1200px;
     margin: 0 auto;
+  
 }
 
 .logo-container {
     display: flex;
     align-items: center;
     flex-grow: 1;
+
 }
 
 .logo-container img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+
 }
 
 .site-title {
@@ -97,12 +100,14 @@ a {
     font-weight: bold;
     color: var(--secondary-color);
     line-height: 1.2;
+
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+
 }
 
 .main-nav a {
@@ -111,6 +116,7 @@ a {
     display: flex;
     align-items: center;
     padding: 10px 0;
+
 }
 
 .main-nav a.active {
@@ -122,6 +128,7 @@ a {
     margin-right: 5px;
     font-size: 16px;
     color: var(--primary-color);
+
 }
 
 .parent-portal {
@@ -133,9 +140,28 @@ a {
 }
 
 /* --- Main Content Sections --- */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
+    
+
+    
+}
+.hero-section .enrol img{
+ 
+  height: 512px;
+  width: 1361px;
+   display: center;
+margin-top: auto;
+margin-left: -140px;
+border-bottom: #eee solid 1px;
+margin-top: 5px;
+ padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+
+
 }
 
 /* Hero Section */
@@ -156,31 +182,115 @@ main {
 
 .hero-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 50px;
-    gap: 30px;
+    radius: 20px;
+
 }
 
 .hero-illustration {
     flex: 1 1 30%;
+
 }
 
-.hero-illustration img {
-    max-width: 100%;
-    height: auto;
+/*grdpic*/
+.grad1 img {
+   height: 500px;
+   border-radius: 10%;
+   margin-left:-75% ;
+   padding: 1px;
+   padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.grad2 img{
+    height: 500px;
+    border-radius: 10%;
+    margin-top: -50%;
+    padding: 1px;
+    margin-bottom: 25px;
+    padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.hero-text {
+.grad3 img {
+    width: 35%;
+     height: 500px;
+     border-radius: 10%;
+     margin-left:70% ;
+     margin-top: -80%;
+     margin-bottom: 50px;
+      padding: 1px;
+      padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/*eventpic*/
+.event1 img {
+    width: 35%;
+   height: 500px;
+   border-radius: 10%;
+   margin-left:-75% ;
+   padding: 1px;
+   padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.event2 img{
+     width: 35%;
+    height: 500px;
+    border-radius: 10%;
+    margin-top: -50%;
+    padding: 1px;
+    margin-bottom: 25px;
+    padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.event3 img {
+     width: 35%;
+     height: 500px;
+     border-radius: 10%;
+     margin-left:70% ;
+     margin-top: -80%;
+     margin-bottom: 50px;
+      padding: 1px;
+      padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+
+
+ .hero-text1 {
     flex: 0 1 300px;
     font-size: 18px;
     font-weight: bold;
     color: var(--secondary-color);
     padding: 20px;
     text-align: center;
+    margin-top: -13%;
+    padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+ .hero-text2 {
+    flex: 0 1 300px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: -3%;
+       padding: 15px;
+      border-radius: 5%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    
 }
 
-/* Why Love Section */
+
 .why-love-section {
     padding: 50px 5%;
     background-color: var(--light-bg);
